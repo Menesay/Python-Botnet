@@ -2,6 +2,7 @@ Educational purposes only.
 
 ### Bot and deobfuscated
 * bot connects to http server.
+* obfuscation of bot is very bad (it has very big file size).
 * at http server \<body>\</body> should be data like that:
   * 1.1.1.1P80PtcpP10P50Patc
   * P' s for parsing.
